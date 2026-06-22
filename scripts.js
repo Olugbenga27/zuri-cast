@@ -186,8 +186,19 @@ nextBtn?.addEventListener('click', nextTestimonial);
 prevBtn?.addEventListener('click', prevTestimonial);
 setInterval(nextTestimonial, 7000);
 
+const navLinks = document.querySelectorAll('.top-nav a');
 navToggle.addEventListener('click', () => {
-  siteHeader.classList.toggle('open');
+  const isOpen = siteHeader.classList.toggle('open');
+  navToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    if (siteHeader.classList.contains('open')) {
+      siteHeader.classList.remove('open');
+      navToggle.setAttribute('aria-label', 'Open navigation');
+    }
+  });
 });
 
 window.addEventListener('scroll', () => {
