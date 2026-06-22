@@ -93,8 +93,6 @@ galleryButtons.forEach((button) => {
 
 const imageMap = {
   'wall-art-1': { src: 'images/white_gold_geode_canvas.webp', alt: 'Resin wall art' },
-  'coaster-1': { src: 'images/aqua_agate_coasters.jpg', alt: 'Gold coaster set' },
-  'tray-1': { src: 'images/crystal_geode_tray.jpg', alt: 'Cream tray' },
   'table-1': { src: 'images/river_live_edge_coffee_table.jpg', alt: 'Statement table' },
   'custom-1': { src: 'images/clear_flower_handbag.jpg', alt: 'Custom order' },
   'wall-art-2': { src: 'images/blue_marble_wall_mural.jpg', alt: 'Marble wall art' },
